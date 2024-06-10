@@ -30,6 +30,8 @@
                 <li><a href="resume.html">Detailed Resume</a></li>
                 <li><a href="projects.html" class="active">Projects</a></li>
                 <li><a href="#footer">Contact</a></li>
+                <li><a href="#Goatlings">Goatlings.com</a></li>
+                <li><a href="#GameJams">Game Jams</a></li>
             </ul>
         </nav>
 
@@ -61,18 +63,60 @@
                 <!-- Sorter -->
                 <center><h2>Item Sorter</h2></center>
                 <span class="image fit">
-                    <img height="500" src="images/GoatOldSorterBig.png" />
+                    <img src="images/GoatSorter.png" />
                 </span>
-                <span class="fit">
-                    <img align="right" width ="650" height="500" src="images/GoatNewSorter.png" />
+
+                <p>
+                    Goatlings.com allows users to collect a multitude of different items through different means. Over the years they've accumulated a large assortment of unique items, and of course players' inventories would continually fill with them.
+
+                    <br /><br />The previous item sorter displayed every item in a user's inventory by instance. If a user had 80 of one type of item, it would display 80 individual lines with radio buttons generated to denote what would be done with that instance. Not only that, but should there be an error encountered in moving items, the page processed the move up until the error was hit, and gave no clear indication of what had happened / what failed to be sorted.
+
+                    <br /><br />My new implementation condensed the page greatly, showing stock available of each item and allowing the user to type in the amount of each item that they desired to have the above action taken with. Also, should the user encounter an error of any kind, the error is logged, and the rest of the process is no longer halted. The rest of the move takes place, and the user now gets an informative message displaying how many things were moved, the last item moved, and a detailed description of what failed to move along with why.
+                </p>
+                <!-- Craft -->
+                <center><h2>Crafting System</h2></center>
+                <span class="image left">
+                    <img src="images/GoatCraftOld.png" />
                 </span>
-                <p>Skibidi</p>
+                <p>
+                    Previously, the crafting system in place was not very intuitive or user friendly. In order to craft an item, users would have to click on each of these tiny dropdowns, and parse through their entire inventories to select the desired items to craft with.
+                    Not only that, but users also had to select the appropriate craftable item from the fourth dropdown list in the center that matched the selected ingredients. In order to see what ingredients went into which recipes for crafting items, a different page would need to be visited as well, before returning to this one to actually craft the item. However, the tediousness did not stop there.
 
-
+                    <br /><br />These dropdown lists also displayed every item in a user's inventory by <b>instance.</b> A regular user would then expect to comb through hundreds to thousands of items for the correct ingredients, and should they select a duplicate instance, the entire process would fail.
+                </p>
+                <span class="image right">
+                    <img src="images/GoatCraftNew.png" />
+                </span>
+                <p><br />
+                    The new page to craft items is far more streamlined. I've organized each of the craftables into different categories, and clicking on one from a previous page will show a far easier experience in crafting items. Now the desired item to be produced is on full display in an organized table, along with the required ingredients. The "Craft!" button automatically parses through a user's inventory for the required items, generating the item if the requirements are met, or returning a detailed message should they be missing an ingredient.
+                    <br /><br />
+                    The pages listing each of these recipes has also gone from <i>static</i> to <i>dynamic.</i> Previously the recipe book pages were built manually, with HTML needing to be manually constructed. In the new pages, not only is it more organized, but any changes to a recipe will be reflected immediately. When another recipe gets added as well, the tag system will auto-populate the new recipe into the appropriate page, reducing work and making that manual page adjustment no longer necessary.
+                </p>
             </section>
 
-            <center><iframe width="560" height="315" src="https://www.youtube.com/embed/QPYzeZkxsCM?si=3kRpATTPDgybwnrX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </center>
+            <section id="GameJams" class="main">
+                <center><h1>Game Jams</h1></center>
+                <p>A Game Jam is an event where a small team comes together to construct a game within a short amount of time. I've displayed 2 of my works here, collaborating with 4 new individuals over the course of a small period to create these projects using Unity.</p>
+                <span class="image left">
+                    <img src="images/ApothekittyTitle.png" />
+                </span>
+
+                <center>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/QPYzeZkxsCM?si=3kRpATTPDgybwnrX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </center>
+                <p>I was the lead developer for Apothekitty, a project developed in a 2 week timeframe with 4 other individuals that I had not met until that point. I had brought the main concept of the game, and was responsible for the control-scheme, camera movement, and data structuring as well. I also helped coach the other developer, as this was their first project.</p>
+                
+                <p>In Apothekitty, you play as Penny Cea, an Apothecary kitten tasked with treating customers for their ailments. I programmed a customer with a randomized list of ailments, along with a recipe book that guides you into knowing which ingredients to mix to achieve the desired result. The above video shares a look at all the core gameplay, but if you wish to download the game and try it for yourself, you can do so <a href="Apothekitty.zip">here.</a></p>
+                <span class="image left">
+                    <img src="images/ClaudioTitle.png" />
+                </span>
+                <center>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/ZkIhkLDMD2A?si=PGtBlYd5QI2uXwwz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </center>
+                <p>I took a supporting role for developing Claudio, while another developer took the lead role on controls. I was responsible for systems such as how gravity functioned uniquely with planetary objects, and for managing the constructions of each Scene or Level present. This game was produced within a 1 week period of time, again with individuals that had never met prior.</p>
+
+                <p>In Claudio, you are an astronaut attempting to reach his rocketship stranded on orbiting clouds before time runs out. I programmed the Scenes, and the gravity + rotational physics used. The above video samples the core gameplay, though if you wish to download the title and try it for yourself, you can do so <a href="Claudio.zip">here.</a></p>
+            </section>
 
         </div>
 
