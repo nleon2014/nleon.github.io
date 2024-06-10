@@ -39,9 +39,36 @@
             <!-- Goatlings -->
             <section id="Goatlings" class="main">
                 <h2>Goatlings.com</h2>
-                <p>Goatlings.com is a virtual pet-site run by Christine Mohr. On this website, you collect, raise, and dress your own "goatlings" as well as trade, battle, and interact with other players. I've had the pleasure of getting to work with them on multiple projects to improve the site, a few of which are included here.
-                
-                <br />Hey dude, you should like, draw out how you want this displayed first.</p>
+                <span class="image fit">
+                    <img src="images/GoatHeader.jpg" />
+                </span>
+                <span class="image right">
+                    <img src="images/Goats.png" />
+                </span>
+                <p>
+                    Goatlings.com is a virtual pet-site run by Christine Mohr. On this website, you collect, raise, and dress your own "goatlings" as well as trade, battle, and interact with other players. I've had the pleasure of getting to work with them on multiple projects to improve the site, a few of which are included here.<br /><br /> The website is much like Neopets in construction, with several unique skins to obtain for your virtual pet, and a focus on user-user interactivity with over 100,000 users. The website also promotes an extremely strong community, with a heavy amount of on-site content being created by players before being officially rendered. As lead programmer for the website, I have listened actively to this userbase when implementing changes.
+                </p>
+                <!-- Leveling -->
+                <center><h2>Leveling System</h2></center>
+                <span class="image left">
+                    <img src="images/GoatLevel.png" />
+                </span>
+                <p>
+                    <br />
+                    The first job that was asked of me was an overhaul of the site's leveling system. For Goatlings, levels ranged from 1-100, with experience being gained through battle. However, upon examination of the current system in place, the problem was readily visible. Under the original format, to raise a Goatling from 1-100 would take about <b>10 years</b> of optimized play.
+                    <br /><br />Understanding the issue, I spoke with the site owner about possible solutions. This was to be implemented in a dynamic exp-curve rather than a static requirement to level up, which greatly changed the exp requirements to each level. This meant that Goatlings who had already earned several levels higher worth of experience needed to be updated, as well as the appropriate stat increases. This led to the careful construction of larger <b>SQL statements</b> that would update Goatlings by the ranges of experience earned, as well as adjusting several stats. Goatlings.com currently has 359,000 individual Goatlings.
+                </p>
+                <!-- Sorter -->
+                <center><h2>Item Sorter</h2></center>
+                <span class="image fit">
+                    <img height="500" src="images/GoatOldSorterBig.png" />
+                </span>
+                <span class="fit">
+                    <img align="right" width ="650" height="500" src="images/GoatNewSorter.png" />
+                </span>
+                <p>Skibidi</p>
+
+
             </section>
 
             <center><iframe width="560" height="315" src="https://www.youtube.com/embed/QPYzeZkxsCM?si=3kRpATTPDgybwnrX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
